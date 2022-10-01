@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<HTML lang='pt-BR'>
+    <HEAD>
+        <meta charset="UTF-8">
+        <title>{{titulo}}</title>
+        <link rel="shortcut icon" type="imagem/x-icon" href="../imagens/grandma.ico"/>
+        <link rel="stylesheet" type="text/css" href="../static/css/estilo.css"> <!--Conectando com o CSS-->
+    </head>
+    <BODY>
+        <a href="/"><button>voltar para a página principal</button></a><br>
+        <h2>Atualizar dados: Idoso</h2><br>
+        <form action="/cadastrarAtualiza.html" method="POST">
+            <label> Código: </label><br>
+            <input type="number" min="1" name="tCodigo"/>
+            <br><br>
+
+            <label> Campo: </label><br>
+            <select name="tCampo">
+                <option value="nome">Nome Completo</option>
+                <option value="apelido">Apelido/Nome Social</option>
+                <option value="NSUS">Número Cartão Nacional de Saúde</option>
+                <option value="RG">Documento de Identidade/RG</option>
+                <option value="CPF">CPF</option>
+                <option value="mae">Nome Completo da Mãe</option>
+                <option value="dataDeNascimento">Data de Nascimento</option>
+                <option value="sexo">Sexo</option>
+                <option value="municipioN">Município de Nascimento</option>
+                <option value="nacionalidade">Nacionalidade</option>
+                <option value="paisN">País de Nascimento</option>
+                <option value="alfa">Sabe ler e escrever?</option>
+                <option value="escolaridade">Escolaridade</option>
+                <option value="raca">Raça/Cor</option>
+                <option value="religiao">Tem religião?</option>
+                <option value="ocupacao">Ocupação/Profissional Principal</option>
+                <option value="conjugal">Situação conjugal</option>
+                <option value="UBS">Unidade Básica de Saúde que frequenta</option>
+                <option value="alergia">Tem alguma alergia de maior gravidade? Especificar</option>
+                <option value="deficiencia">Tem alguma deficiência?</option>
+                <option value="qualD">Qual?</option>
+                <option value="sangue">Grupo Sanguíneo</option>
+                <option value="fator">Fator RH</option>
+                <option value="rua">Rua/Avenida/Praça</option>
+                <option value="num">Número</option>
+                <option value="complemento">Complemento</option>
+                <option value="bairro">Bairro</option>
+                <option value="ref">Ponto de Referência</option>
+                <option value="CEP">CEP</option>
+                <option value="municipioE">Município</option>
+                <option value="estado">Estado</option>
+                <option value="telefone">Telefone</option>
+                <option value="celular">Celular</option>
+                <option value="email">Email</option>
+                <option value="pergunta1">Você mora sozinho(a)?</option>
+                <option value="pergunta2">Você mora com familiares?</option>
+                <option value="pergunta3">Você mora com seu(sua) cônjuge ou companheiro(a)?</option>
+                <option value="pergunta4">Você reside em Instituição de Longa Permanência para Idosos (ILPI), abrigo ou casa de repouso?</option>
+                <option value="pergunta5">Nos últimos 30 dias, você se encontrou com amigos ou familiares para como ir ao cinema ou à igreja, passear ou caminhar junto?</option>
+                <option value="pergunta6">Em caso de necessidade, você conta com alguém para acompanhá-lo(a) à unidade de saúde ou a uma consulta?</option>
+                <option value="pergunta7">Você tem fácil acesso aos serviços de farmácia, padaria ou supermercado?</option>
+                <option value="pergunta8">Você tem fácil acesso a transporte?</option>
+                <option value="pergunta9">Você trabalha atualmente?</option>
+                <option value="pergunta10">Você recebe aposentadoria ou pensão?</option>
+                <option value="pergunta11">Você recebe Benefício de Prestação Continuada (BPC)?</option>
+                <option value="pergunta12">Você recebe Bolsa Família?</option>
+                <option value="refNome">Nome Completo</option>
+                <option value="refNascimento">Data de Nascimento</option>
+                <option value="refVinculo">Vínculo</option>
+                <option value="refEndereco">Endereço</option>
+                <option value="refTel">Telefone/Celular</option>
+                <option value="refMora">Esta pessoa mora com você?</option>
+                <option value="refDataInfo">Data dessa informação</option>
+            </select>
+            <br><br>
+
+            <label> Novo Dado: </label><br>
+            <input type="text" name="tDado" placeholder="20:00:00"/>
+            <br><br>
+
+            <button type="submit">Atualizar</button>
+            <h6>{{dados}}</h6>
+        </form>
+    </BODY>
+</HTML>

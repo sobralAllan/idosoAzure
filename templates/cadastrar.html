@@ -1,0 +1,201 @@
+<!Doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{titulo}}</title>
+        <link rel="shortcut icon" type="imagem/x-icon" href="../imagens/grandma.ico"/>
+        <link rel="stylesheet" type="text/css" href="../static/css/estilo.css"> <!--Conectando com o CSS-->
+    </head>
+    <body>
+        <a href="/"><button>voltar para a página principal</button></a><br>
+        <form action="/cadastrar.html" method="POST">
+            <h2>Informações do idoso</h2>
+
+            <label id="lNome" name="lNome">Nome Completo:</label><br>
+            <input type="text" id="tNome" name="tNovoNome" placeholder="Informe o nome completo"/><br>
+
+            <label id="lApeido" name="lApeido">Apelido/Nome Social:</label><br>
+            <input type="text" id="tApeido" name="tNovoApelido" placeholder="Informe o apelido/nome social"/><br>
+
+            <label id="lNSUS" name="lNSUS">Número Cartão Nacional de Saúde:</label><br>
+            <input type="text" id="tNSUS" name="tNovoNSUS" placeholder="xxxxxxxxxxxxxxx"/><br>
+
+            <label id="lRG" name="lRG">Documento de Identidade/RG:</label><br>
+            <input type="text" id="tRG" name="tNovoRG" placeholder="xx.xxx.xxx-x"/><br>
+
+            <label id="lCPF" name="lCPF">CPF:</label><br>
+            <input type="text" id="tCPF" name="tNovoCPF" placeholder="xxx.xxx.xxx-xx"/><br>
+
+            <label id="lMae" name="lMae">Nome Completo da Mãe:</label><br>
+            <input type="text" id="tMae" name="tNovoMae" placeholder="Informe o nome cmopleto da mãe"/><br>
+
+            <label id="lData" name="lData">Data de Nascimento: </label><br>
+            <input type="date" id="tData" name="tNovaData"/><br>
+
+            <label id="lSexo" name="lSexo">Sexo:</label><br>
+            <input type="text" id="tSexo" name="tNovoSexo" placeholder="Masculino/Feminino"/><br>
+
+            <label id="lMunicipioN" name="lMunicipioN">Município de Nascimento:</label><br>
+            <input type="text" id="tMunicipioN" name="tNovoMunicipioN" placeholder="Informe o município de nasicmento"/><br>
+
+            <label id="lNacionalidade" name="lNacionalidade">Nacionalidade:</label><br>
+            <input type="text" id="tNacionalidade" name="tNovaNacionalidade" placeholder="Brasileira/Naturalizada/Estrangeira"/><br>
+
+            <label id="lPaisN" name="lPaisN">País de Nascimento:</label><br>
+            <input type="text" id="tPaisN" name="tNovoPaisN" placeholder="Informe o país de nascimento"/><br>
+
+            <label id="lAlfa" name="lAlfa">Sabe ler e escrever?:</label><br>
+            <input type="text" id="tAlfa" name="tNovoAlfa" placeholder="Sim/Não"/><br>
+
+            <label id="lEscolaridade" name="lEscolaridade">Escolaridade:</label><br>
+            <input type="text" id="tEscolaridade" name="tNovaEscolaridade" placeholder="Nenhuma/de 1 a 3 anos/de 4 a 7 anos/8 anos ou +"/><br>
+
+            <label id="lRaca" name="lRaca">Raça/Cor:</label><br>
+            <input type="text" id="tRaca" name="tNovaRaca" placeholder="Branca/Preta/Parda/Amarela/Não declarada/Indígena/Qual etnia?"/><br>
+
+            <label id="lReligiao" name="lReligiao">Tem religião?:</label><br>
+            <input type="text" id="tReligiao" name="tNovaReligiao" placeholder="Sim/Não/Qual?"/><br>
+
+            <label id="lOcupacao" name="lOcupacao">Ocupação/Profissional Principal:</label><br>
+            <input type="text" id="tOcupacao" name="tNovaOcupacao" placeholder="Informe a Ocupação/profissional principal"/><br>
+
+            <label id="lConjugal" name="lConjugal">Situação conjugal:</label><br>
+            <input type="text" id="tConjugal" name="tNovoConjugal" placeholder="Solteiro(a)//Casado(a)/Convívio com Parceiro(a)//Divorciado(a)/Separado(a)//Viúvo(a)  Desde quando?(ano)//Outra"/><br>
+
+            <label id="lUBS" name="lUBS">Unidade Básica de Saúde que frequenta:</label><br>
+            <input type="text" id="tUBS" name="tNovaUBS" placeholder="Informe a unidade básica de saúde que frequenta"/><br>
+
+            <label id="lAlergia" name="lAlergia">Tem alguma alergia de maior gravidade? Especificar:</label><br>
+            <input type="text" id="tAlergia" name="tNovaAlergia" placeholder="Sim(Especificar)/Não"/><br>
+
+            <label id="lDeficiencia" name="lDeficiencia">Tem alguma deficiência?:</label><br>
+            <input type="text" id="tDeficiencia" name="tNovaDeficiencia" placeholder="Sim/Não"/><br>
+
+            <label id="lQualD" name="lQualD">Qual?:</label><br>
+            <input type="text" id="tQualD" name="tNovoQualD" placeholder="Auditiva//Visual//Intelectual/Cognitiva//Física//Outra(Especificar)"/><br>
+
+            <label id="lSangue" name="lSangue">Grupo Sanguíneo:</label><br>
+            <input type="text" id="tSangue" name="tNovoSangue" placeholder="A/B/AB/O"/><br>
+
+            <label id="lFator" name="lFator">Fator RH:</label><br>
+            <input type="text" id="tFator" name="tNovoFator" placeholder="Positivo/Negativo"/><br>
+
+            <h2>Endereço Residencial</h2>
+
+            <label id="lRua" name="lRua">Rua/Avenida/Praça:</label><br>
+            <input type="text" id="tRua" name="tNovaRua" placeholder="Informe a Rua/Avenida/Praça:"/><br>
+
+            <label id="lNum" name="lNum">Número:</label><br>
+            <input type="text" id="tNum" name="tNovoNum" placeholder="Infomre o Número"/><br>
+
+            <label id="lComplemento" name="lComplemento">Complemento:</label><br>
+            <input type="text" id="tComplemento" name="tNovoComplemento" placeholder="Informe o Complemento"/><br>
+
+            <label id="lBairro" name="lBairro">Bairro:</label><br>
+            <input type="text" id="tBairro" name="tNovoBairro" placeholder="Informe o Bairro"/><br>
+
+            <label id="lRef" name="lRef">Ponto de Referência:</label><br>
+            <input type="text" id="tRef" name="tNovaRef" placeholder="Informe um Ponto de Referência"/><br>
+
+            <label id="lCEP" name="lCEP">CEP:</label><br>
+            <input type="text" id="tCEP" name="tNovoCEP" placeholder="Informe o CEP"/><br>
+
+            <label id="lMunicipioE" name="lMunicipioE">Município:</label><br>
+            <input type="text" id="tMunicipioE" name="tNovoMunicipioE" placeholder="Infomre o Município"/><br>
+
+            <label id="lEstado" name="lEstado">Estado:</label><br>
+            <input type="text" id="tEstado" name="tNovoEstado" placeholder="Informe o Estado"/><br>
+
+            <label id="lTelefone" name="lTelefone">Telefone:</label><br>
+            <input type="text" id="tTelefone" name="tNovoTelefone" placeholder="(99) 9999-9999"/><br>
+
+            <label id="lCelular" name="lCleular">Celular:</label><br>
+            <input type="text" id="tCelular" name="tNovoCelular" placeholder="(99) 99999-9999"/><br>
+
+            <label id="lEmail" name="lEmail">Email:</label><br>
+            <input type="text" id="tEmail" name="tNovoEmail" placeholder="xxxxx@xxxx.com"/><br>
+
+            <h2>Informações sociofamiliares</h2>
+
+            <label id="lPergunta1" name="lPergunta1">Você mora sozinho(a)?:</label><br>
+            <input type="text" id="tPergunta1" name="tNovaPergunta1" placeholder="Sim/Não"/><br>
+
+            <label id="lPergunta2" name="lPergunta2">Você mora com familiares?:</label><br>
+            <input type="text" id="tPergunta2" name="tNovaPergunta2" placeholder="Sim/Não"/><br>
+
+            <label id="lPergunta3" name="lPergunta3">Você mora com seu(sua) cônjuge ou companheiro(a)?:</label><br>
+            <input type="text" id="tPergunta3" name="tNovaPergunta3" placeholder="Sim/Não"/><br>
+
+            <label id="lPergunta4" name="lPergunta4">Você reside em Instituição de Longa Permanência para Idosos (ILPI), abrigo ou casa de repouso?:</label><br>
+            <input type="text" id="tPergunta4" name="tNovaPergunta4" placeholder="Sim/Não"/><br>
+
+            <label id="lPergunta5" name="lPergunta5">Nos últimos 30 dias, você se encontrou com amigos ou familiares para como ir ao cinema ou à igreja, passear ou caminhar junto?:</label><br>
+            <input type="text" id="tPergunta5" name="tNovaPergunta5" placeholder="Sim/Não"/><br>
+
+            <label id="lPergunta6" name="lPergunta6">Em caso de necessidade, você conta com alguém para acompanhá-lo(a) à unidade de saúde ou a uma consulta?:</label><br>
+            <input type="text" id="tPergunta6" name="tNovaPergunta6" placeholder="Sim/Não"/><br>
+
+            <label id="lPergunta7" name="lPergunta7">Você tem fácil acesso aos serviços de farmácia, padaria ou supermercado?:</label><br>
+            <input type="text" id="tPergunta7" name="tNovaPergunta7" placeholder="Sim/Não"/><br>
+
+            <label id="lPergunta8" name="lPergunta8">Você tem fácil acesso a transporte?:</label><br>
+            <input type="text" id="tPergunta8" name="tNovaPergunta8" placeholder="Sim/Não"/><br>
+
+            <label id="lPergunta9" name="lPergunta9">Você trabalha atualmente?:</label><br>
+            <input type="text" id="tPergunta9" name="tNovaPergunta9" placeholder="Sim/Não"/><br>
+
+            <label id="lPergunta10" name="lPergunta10">Você recebe aposentadoria ou pensão?:</label><br>
+            <input type="text" id="tPergunta10" name="tNovaPergunta10" placeholder="Sim/Não"/><br>
+
+            <label id="lPergunta11" name="lPergunta11">Você recebe Benefício de Prestação Continuada (BPC)?:</label><br>
+            <input type="text" id="tPergunta11" name="tNovaPergunta11" placeholder="Sim/Não"/><br>
+
+            <label id="lPergunta12" name="lPergunta12">Você recebe Bolsa Família?:</label><br>
+            <input type="text" id="tPergunta12" name="tNovaPergunta12" placeholder="Sim/Não"/><br>
+
+            <h2>Pessoas de Referência</h2>
+            <h4>Informe os dados de pessoas que possam ser contatadas em caso de urgência.</h4>
+
+            <label id="lRefNome" name="lRefNome">Nome Completo:</label><br>
+            <input type="text" id="tRefNome" name="tNovaRefNome" placeholder="Informe o nome completo"/><br>
+
+            <label id="lRefNascimento" name="lRefNascimento">Data de Nascimento:</label><br>
+            <input type="date" id="tRefNascimento" name="tNovaRefNascimento"/><br>
+
+            <label id="lRefVinculo" name="lRefVinculo">Vínculo:</label><br>
+            <input type="text" id="tRefVinculo" name="tNovaRefVinculo" placeholder="Informe o vínculo"/><br>
+
+            <label id="lRefEndereco" name="lRefEndereco">Endereço:</label><br>
+            <input type="text" id="tRefEndereco" name="tNovaRefEndereco" placeholder="Rua, número, complemento e CEP"/><br>
+
+            <label id="lRefTel" name="lRefTel">Telefone/Celular:</label><br>
+            <input type="text" id="tRefTel" name="tNovaRefTel" placeholder="(99) 99999-9999"/><br>
+
+            <label id="lRefMora" name="lRefMora">Esta pessoa mora com você?:</label><br>
+            <input type="text" id="tRefMora" name="tNovaRefMora" placeholder="Sim/Não"/><br>
+
+            <label id="lRefDataInfo" name="lRefDataInfo">Data dessa informação:</label><br>
+            <input type="date" id="tRefDataInfo" name="tNovaRefDataInfo"/><br>
+            
+
+            <p><button type="submit">Cadastrar</button></p>
+        </form>
+        <label id="result" name="result"></label><br><br><br><br>
+
+        <h3>visualizar dados do idoso cadastrados</h3>    
+
+        <a href="cadastrarConsulta.html"><button>Consultar</button></a><br><br>
+
+        <h3>atualizar dados do idoso cadastrados</h3>
+
+        <a href="cadastrarAtualiza.html"><button>Atualizar</button></a><br><br>
+
+        <h3>excluir dados do idoso cadastrados</h3>
+
+        <a href="cadastrarExclui.html"><button>Excluir</button></a><br><br>
+    </body>
+</html>
+
+       
+    </body>
+</html>

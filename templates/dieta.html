@@ -1,0 +1,40 @@
+    <!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{titulo}}</title>
+        <link rel="shortcut icon" type="imagem/x-icon" href="../imagens/grandma.ico"/>
+        <link rel="stylesheet" type="text/css" href="../static/css/estilo.css"> <!--Conectando com o CSS-->
+    </head>
+    <body>
+        <a href="/"><button>voltar para a página principal</button></a><br>
+        <form action="/dieta.html" method="POST">
+            <h2>Dieta</h2><br>
+            <h3>inserir nova dieta:</h3><br>
+
+            <label id="lDietaData" name="lDietaData">Data: </label><br>
+            <input type="date" id="tDietaData" name="tNovaDietaData"/><br><br>
+
+            <label id="lDietaHora" name="lDietaHora">Horário: </label><br>
+            <input type="time" id="tDietaHora" name="tNovaDietaHora"/><br><br>
+
+            <label id="lDietaDieta" name="lDietaDieta">Dieta do idoso: </label><br>
+            <input type="text" id="tDieta" name="tNovaDietaDieta" placeholder="Dieta"/><br><br>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+        <label id="result" name="result"></label><br><br><br><br>
+
+        <h3>visualizar dados de dieta cadastrados</h3>  
+
+        <a href="dietaConsulta.html"><button>Consultar</button></a><br><br>
+
+        <h3>atualizar dados de dieta cadastrados</h3>
+
+        <a href="dietaAtualiza.html"><button>Atualizar</button></a><br><br>
+
+        <h3>excluir dados de dieta cadastrados</h3>
+
+        <a href="dietaExclui.html"><button>Excluir</button></a><br><br>
+    </body>
+</html>

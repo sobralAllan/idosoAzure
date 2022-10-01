@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{titulo}}</title>
+        <link rel="shortcut icon" type="imagem/x-icon" href="../imagens/grandma.ico"/>
+        <link rel="stylesheet" type="text/css" href="../static/css/estilo.css"> <!--Conectando com o CSS-->
+    </head>
+    <body>
+        
+        <div id="volt"><button id="voltar"><a id="botaotxt" href="/">voltar para a página principal</button></a><br></div>
+        <form action="/agenda.html" method="POST">
+            <div id="agenda">
+                <h2>Agenda</h2><br>
+            </div>
+            
+            <h3>inserir novo dado na agenda:</h3><br>
+
+            <label id="lAgendaData" name="lAgendaData">Data: </label><br>
+            <input type="date" id="tAgendaData" name="tNovaAgendaData"/><br><br>
+
+            <label id="lAgendaHora" name="lAgendaHora">Horário: </label><br>
+            <input type="time" id="tAgendaHora" name="tNovaAgendaHora"/><br><br>
+
+            <label id="lAgendaDesc" name="lAgendaDesc">Descrição: </label><br>
+            <input type="text" id="tAgendaDesc" name="tNovaAgendaDesc" placeholder="Descrição do evento"/><br><br>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+        <label id="result" name="result"></label><br><br><br><br>
+
+            
+        <div class="grid-agenda">            
+            <div id="agenda1"><h3>visualizar dados de agenda cadastrados</h3></div>
+            <div id="agenda2"><button class="ag1"><a  id="botaotxt" href="agendaConsulta.html">Consultar</button></a><br><br></div>
+
+            <div id="agenda3"><h3>atualizar dados de agenda cadastrados</h3></div>
+            <div id="agenda4"><button><a id="botaotxt" href="agendaAtualiza.html">Atualizar</button></a><br><br></div>
+
+            <div id="agenda5"><h3>excluir dados de agenda cadastrados</h3></div>
+            <div id="agenda6"><button><a id="botaotxt" href="agendaExclui.html">Excluir</button></a><br><br></div>
+        </div>
+    </body>
+</html>

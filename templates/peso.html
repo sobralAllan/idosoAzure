@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{titulo}}</title>
+        <link rel="shortcut icon" type="imagem/x-icon" href="../imagens/grandma.ico"/>
+        <link rel="stylesheet" type="text/css" href="../static/css/estilo.css"> <!--Conectando com o CSS-->
+    </head>
+    <body>
+        <a href="/"><button>voltar para a página principal</button></a><br>
+        <form action="/peso.html" method="POST">
+            <h2>Peso</h2><br>
+            <h3>inserir novo peso:</h3><br>
+
+            <label id="lPesoData" name="lPesoData">Data: </label><br>
+            <input type="date" id="tPesoData" name="tNovaPesoData"/><br><br>
+
+            <label id="lPesoHora" name="lPesoHora">Horário: </label><br>
+            <input type="time" id="tPesoHora" name="tNovaPesoHora"/><br><br>
+
+            <label id="lPesoPeso" name="lPesoPeso">Peso do idoso: </label><br>
+            <input type="text" id="tPesoPeso" name="tNovaPesoPeso" placeholder="Peso"/><br><br>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+        <label id="result" name="result"></label><br><br><br><br>
+
+        <h3>visualizar dados de peso cadastrados</h3>  
+
+        <a href="pesoConsulta.html"><button>Consultar</button></a><br><br>
+
+        <h3>atualizar dados de peso cadastrados</h3>
+
+        <a href="pesoAtualiza.html"><button>Atualizar</button></a><br><br>
+
+        <h3>excluir dados de peso cadastrados</h3>
+
+        <a href="pesoExclui.html"><button>Excluir</button></a><br><br>
+    </body>
+</html>

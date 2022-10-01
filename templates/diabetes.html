@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{titulo}}</title>
+        <link rel="shortcut icon" type="imagem/x-icon" href="../imagens/grandma.ico"/>
+        <link rel="stylesheet" type="text/css" href="../static/css/estilo.css"> <!--Conectando com o CSS-->
+    </head>
+    <body>
+        <a href="/"><button>voltar para a página principal</button></a><br>
+        <form action="/diabetes.html" method="POST">
+            <h2>Diabetes</h2><br>
+            <h3>inserir novo dado de diabetes:</h3><br>
+
+            <label id="lDiabetesData" name="lDiabetesData">Data: </label><br>
+            <input type="date" id="tDiabetesData" name="tNovaDiabetesData"/><br><br>
+
+            <label id="lDiabetesHora" name="lDiabetesHora">Horário: </label><br>
+            <input type="time" id="tDiabetesHora" name="tNovaDiabetesHora"/><br><br>
+
+            <label id="lDiabetesDiabetes" name="lDiabetesDiabetes">Diabetes do idoso: </label><br>
+            <input type="text" id="tDiabetesDiabetes" name="tNovaDiabetesDiabetes" placeholder="Diabetes"/><br><br>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+        <label id="result" name="result"></label><br><br><br><br>
+
+        <h3>visualizar dados de diabetes cadastrados</h3> 
+
+        <a href="diabetesConsulta.html"><button>Consultar</button></a><br><br>
+
+        <h3>atualizar dados de diabetes cadastrados</h3>
+
+        <a href="diabetesAtualiza.html"><button>Atualizar</button></a><br><br>
+
+        <h3>excluir dados de diabetes cadastrados</h3>
+
+        <a href="diabetesExclui.html"><button>Excluir</button></a><br><br>
+    </body>
+</html>

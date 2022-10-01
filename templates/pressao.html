@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{titulo}}</title>
+        <link rel="shortcut icon" type="imagem/x-icon" href="../imagens/grandma.ico"/>
+        <link rel="stylesheet" type="text/css" href="../static/css/estilo.css"> <!--Conectando com o CSS-->
+    </head>
+    <body>
+        <a href="/"><button>voltar para a página principal</button></a><br>
+        <form action="/pressao.html" method="POST"><h2>Pressão</h2><br>
+            <h3>inserir nova pressão:</h3><br>
+
+            <label id="lPressaoData" name="lPressaoData">Data: </label><br>
+            <input type="date" id="tPressaoData" name="tNovaPressaoData"/><br><br>
+
+            <label id="lPressaoHora" name="lPressaoHora">Horário: </label><br>
+            <input type="time" id="tPressaoHora" name="tNovaPressaoHora"/><br><br>
+
+            <label id="lPressaoPressao" name="lPressaoPressao">Pressão do idoso: </label><br>
+            <input type="text" id="tPressaoPressao" name="tNovaPressaoPressao" placeholder="Pressão"/><br><br>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <label id="result" name="result"></label><br><br><br><br>
+
+        <h3>visualizar dados de pressão cadastrados</h3>   
+
+        <a href="pressaoConsulta.html"><button>Consultar</button></a><br><br>
+
+        <h3>atualizar dados de pressão cadastrados</h3>
+
+        <a href="pressaoAtualiza.html"><button>Atualizar</button></a><br><br>
+
+        <h3>excluir dados de pressão cadastrados</h3>
+
+        <a href="pressaoExclui.html"><button>Excluir</button></a><br><br>
+    </body>
+</html>

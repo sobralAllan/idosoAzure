@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{titulo}}</title>
+        <link rel="shortcut icon" type="imagem/x-icon" href="../imagens/grandma.ico"/>
+        <link rel="stylesheet" type="text/css" href="../static/css/estilo.css"> <!--Conectando com o CSS-->
+    </head>
+    <body>
+        <a href="/"><button>voltar para a página principal</button></a><br>
+        <form action="/altura.html" method="POST">
+            <h2>Altura</h2><br>
+            <h3>inserir novo dado de altura:</h3><br>
+
+            <label id="lAlturaData" name="lAlturaData">Data: </label><br>
+            <input type="date" id="tAlturaData" name="tNovaAlturaData"/><br><br>
+
+            <label id="lAlturaHora" name="lAlturaHora">Horário: </label><br>
+            <input type="time" id="tAlturaHora" name="tNovaAlturaHora"/><br><br>
+
+            <label id="lAlturaAltura" name="lAlturaAltura">Altura do idoso: </label><br>
+            <input type="text" id="tAlturaAltura" name="tNovaAlturaAltura" placeholder="1,60"/><br><br>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+        <label id="result" name="result"></label><br><br><br><br>
+
+        <h3>visualizar dados de altura cadastrados</h3>
+
+        <a href="alturaConsulta.html"><button>Consultar</button></a><br><br>
+
+        <h3>atualizar dados de altura cadastrados</h3>
+
+        <a href="alturaAtualiza.html"><button>Atualizar</button></a><br><br>
+
+        <h3>excluir dados de altura cadastrados</h3>
+
+        <a href="alturaExclui.html"><button>Excluir</button></a><br><br>
+    </body>
+</html>

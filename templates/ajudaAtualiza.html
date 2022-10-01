@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<HTML lang='pt-BR'>
+    <HEAD>
+        <meta charset="UTF-8">
+        <title>{{titulo}}</title>
+        <link rel="shortcut icon" type="imagem/x-icon" href="../imagens/grandma.ico"/>
+        <link rel="stylesheet" type="text/css" href="../static/css/estilo.css"> <!--Conectando com o CSS-->
+    </head>
+    <BODY>
+        <a href="/"><button>voltar para a página principal</button></a><br>
+        <h2>Atualizar dados: Dúvidas/Ajuda</h2><br>
+        <form action="/ajudaAtualiza.html" method="POST">
+            <label> Código: </label><br>
+            <input type="number" min="1" name="tCodigo"/>
+            <br><br>
+
+            <label> Campo: </label><br>
+            <select name="tCampo">
+                <option value="duvida">Dúvida</option>
+                <option value="ajuda">Ajuda</option>
+            </select>
+            <br><br>
+
+            <label> Novo Dado: </label><br>
+            <input type="text" name="tDado" placeholder="Insira o novo dado"/>
+            <br><br>
+
+            <button type="submit">Atualizar</button>
+            <h6>{{dados}}</h6>
+        </form>
+    </BODY>
+</HTML>

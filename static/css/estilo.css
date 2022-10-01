@@ -1,0 +1,278 @@
+body{
+    background-color: rgba(149, 215, 255, 0.856);/* comentario */
+    text-align: center;
+}
+
+#voltar{
+    text-align: left;
+    background-color: rgb(131, 131, 206);
+    width: 210px; 
+    height: 30px;
+    margin-top: 3px;
+    font-family: 'Seoge UI', Tahoma, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+#volt{
+    text-align: left;
+}
+
+.grid-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 70px;
+    grid-row-gap: 5px;
+    margin-left: 100px;
+    margin-right: 100px;
+    }
+
+#menu1{
+    margin-top: 0px;
+    margin-left: 0px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+}
+
+#menu2{
+    margin-left: 0px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    text-align: center;
+}
+
+#menu3{
+    margin-left: 0px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    text-align: center;
+}
+
+#menu4{
+    margin-left: 0px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    text-align: center;
+}
+
+#menu5{
+    margin-left: 0px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+}
+
+#menu6{
+    margin-right: 0px; 
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    text-align: center;
+}
+
+#menu7{
+    margin-top: 0px;
+    margin-left: 0px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    text-align: center;
+}
+
+#menu8{
+    margin-left: 0px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    text-align: center;
+}
+
+#menu9{
+    margin-left: 0px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+}
+
+#menu10{
+    margin-left: 0px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    text-align: center;
+}
+
+#menu11{
+    margin-left: 0px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    text-align: center;
+}
+
+#menu12{
+    margin-right: 0px; 
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    text-align: center;
+}
+
+#menu13{
+    margin-top: 0px;
+    margin-left: 0px;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+}
+
+#menu14{
+    margin-left: 0px;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    text-align: center;
+}
+
+#menu15{
+    margin-left: 0px;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    text-align: center;
+}
+
+#menu16{
+    margin-left: 0px;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    text-align: center;
+}
+
+/*#cuidador{
+    text-align: center;
+    margin-top: 50px;
+}*/
+
+#menu{
+    text-align: center;
+    font-family: 'Seoge UI', Tahoma, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+}
+
+
+.botao1, .botao2, .botao3, .botao4, .botao4, .botao5, .botao6, .botao7, .botao8{
+    background-color: rgb(131, 131, 206);
+    width: 200px; 
+    height: 55px;
+    margin-top: 3px;
+    font-family: 'Seoge UI', Tahoma, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
+#text1, #text2, #text3, #text4, #text5, #text6, #text7, #text8{    
+    font-family: 'Seoge UI', Tahoma, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
+#menu1, #menu3, #menu5, #menu7, #menu9, #menu11, #menu13, #menu15{
+    margin-bottom: -30px;
+}
+
+#botaotxt{
+    text-decoration: none;
+    color: black;
+}
+
+.grid-agenda{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+}
+
+#agenda1{
+    margin-left: 0px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+}
+
+#agenda2{
+    margin-left: 0px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    text-align: center;
+}
+
+#agenda3{
+    margin-left: 0px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+}
+
+#agenda4{
+    margin-left: 0px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    text-align: center;
+}
+
+#agenda5{
+    margin-left: 0px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+}
+
+#agenda6{
+    margin-left: 0px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    text-align: center;
+}
+
+#agenda{
+    text-align: center;
+    font-family: 'Seoge UI', Tahoma, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+}

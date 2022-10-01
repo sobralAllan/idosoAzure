@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<HTML lang='pt-BR'>
+    <HEAD>
+        <meta charset="UTF-8">
+        <title>{{titulo}}</title>
+        <link rel="shortcut icon" type="imagem/x-icon" href="../imagens/grandma.ico"/>
+        <link rel="stylesheet" type="text/css" href="../static/css/estilo.css"> <!--Conectando com o CSS-->
+    </head>
+    <BODY>
+        <a href="/"><button>voltar para a página principal</button></a><br>
+        <h2>Atualizar dados: Diabetes</h2><br>
+        <form action="/diabetesAtualiza.html" method="POST">
+            <label> Código: </label><br>
+            <input type="number" min="1" name="tCodigo"/>
+            <br><br>
+
+            <label> Campo: </label><br>
+            <select name="tCampo">
+                <option value="dia">Data</option>
+                <option value="hora">Horário</option>
+                <option value="diabetes">Diabetes</option>
+            </select>
+            <br><br>
+
+            <label> Novo Dado: </label><br>
+            <input type="text" name="tDado" placeholder="20:00:00"/>
+            <br><br>
+
+            <button type="submit">Atualizar</button>
+            <h6>{{dados}}</h6>
+        </form>
+    </BODY>
+</HTML>

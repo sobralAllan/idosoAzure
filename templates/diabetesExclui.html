@@ -1,0 +1,22 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{titulo}}</title>
+        <link rel="shortcut icon" type="imagem/x-icon" href="../imagens/grandma.ico"/>
+        <link rel="stylesheet" type="text/css" href="../static/css/estilo.css"> <!--Conectando com o CSS-->
+    </head>
+    <body>
+        <a href="/"><button>voltar para a página principal</button></a><br>
+        <h2>Excluir dados: Diabetes</h2><br>
+        <form action="/diabetesExclui.html" method="POST">
+            <label> Código: </label>
+            <input type="number" min="1" name="tCodigo">
+            <br><br>
+
+            <button type="submit">Excluir</button>
+            <h6>{{dados}}</h6>
+        </form>
+        
+    </body>
+</html>
