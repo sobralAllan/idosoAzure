@@ -7,10 +7,11 @@ class conexao:
     
     def conectar(self):
         try:
-            self.db_connection = mysql.connector.connect(host="localhost",
-                                                         user="root",
-                                                         password="",
+            self.db_connection = mysql.connector.connect(host="idoso.mysql.database.azure.com",
+                                                         user="sobralAllan",
+                                                         password="al62862@39lan",
                                                          database="idoso")
+            print("Conectado!")
             return self.db_connection
         except mysql.connector.Error as erro:
             if erro.errno == errorcode.ER_BAD_DB_ERROR: 

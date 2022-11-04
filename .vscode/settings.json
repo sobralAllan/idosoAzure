@@ -1,0 +1,9 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/df5b0dd4-8a31-4bd7-8ee9-6ab0b6b840e4/AppServices/subscriptions/df5b0dd4-8a31-4bd7-8ee9-6ab0b6b840e4/resourceGroups/appsvc_linux_centralus_basic/providers/Microsoft.Web/sites/msdocs-Python-webapp-QuickStart-ALL",
+    "appService.deploySubpath": ".",
+    "azureFunctions.deploySubpath": "api",
+    "azureFunctions.scmDoBuildDuringDeployment": true,
+    "azureFunctions.projectLanguage": "Python",
+    "azureFunctions.projectRuntime": "~4",
+    "debug.internalConsoleOptions": "neverOpen"
+}

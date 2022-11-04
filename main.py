@@ -405,7 +405,7 @@ def atualizaPressao():
 
 @idoso.route('/pressaoExclui.html', methods=['GET','POST'])
 def excluiPressao():
-    if request.method == 'POST':
+    if request.method == 'POST': 
         this.codigo = request.form['tCodigo']
         this.msg = this.modelo.excluirPressao(this.codigo)
     return render_template('pressaoExclui.html', titulo="Excluir Pressão", dados=this.msg)
